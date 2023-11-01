@@ -19,14 +19,6 @@ describe("GET /pet/findByStatus", () => {
       .expect("Content-Type", /json/)
       .expect(200);
     reporter.endStep();
-
-    reporter.startStep(
-      "Going through collection of pets searching for our pet named with specific name"
-    );
-    // const testPet = response.body.find((pet) => pet.name === petname);
-    // expect(testPet.status).toBe("sold");
-
-    reporter.endStep();
   });
 
   test("Create a new pet then find it by id", async () => {

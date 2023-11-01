@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698859045891' stop='1698859048118'>
+    <name>POST /pet</name>
+    <title>POST /pet</title>
+    <test-cases>
+        <test-case start='1698859045892' status='passed' stop='1698859047503'>
+            <name>check added pet's name</name>
+            <title>check added pet's name</title>
+            <labels>
+                <label name='story' value='Add a pet'/>
+                <label name='testId' value='TEST-01'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859045892' status='passed' stop='1698859047501'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859047501' status='passed' stop='1698859047503'>
+                    <name>Check that object is created</name>
+                    <title>Check that object is created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Testing add pet feature</description>
+        </test-case>
+        <test-case start='1698859047503' status='passed' stop='1698859048118'>
+            <name>pet's id should be typeof 'number'</name>
+            <title>pet's id should be typeof 'number'</title>
+            <labels>
+                <label name='story' value='Add a pet'/>
+                <label name='testId' value='TEST-02'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859047503' status='passed' stop='1698859048118'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859048118' status='passed' stop='1698859048118'>
+                    <name>Check that id is the typeof number</name>
+                    <title>Check that id is the typeof number</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Testing add pet feature</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

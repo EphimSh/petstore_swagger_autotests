@@ -1,0 +1,156 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698859134344' stop='1698859140862'>
+    <name>GET /pet/findByStatus</name>
+    <title>GET /pet/findByStatus</title>
+    <test-cases>
+        <test-case start='1698859134344' status='passed' stop='1698859135612'>
+            <name>Create a new pet then find it by status</name>
+            <title>Create a new pet then find it by status</title>
+            <labels>
+                <label name='story' value='Find pets'/>
+                <label name='testId' value='TEST-06'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859134345' status='passed' stop='1698859135026'>
+                    <name>Creating a new pet</name>
+                    <title>Creating a new pet</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859135026' status='passed' stop='1698859135612'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859135612' status='passed' stop='1698859135612'>
+                    <name>Going through collection of pets searching for our pet named with specific name</name>
+                    <title>Going through collection of pets searching for our pet named with specific name</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'></description>
+        </test-case>
+        <test-case start='1698859135612' status='passed' stop='1698859136685'>
+            <name>Create a new pet then find it by id</name>
+            <title>Create a new pet then find it by id</title>
+            <labels>
+                <label name='story' value='Find pets'/>
+                <label name='testId' value='TEST-07'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859135613' status='passed' stop='1698859136153'>
+                    <name>Creating a new pet</name>
+                    <title>Creating a new pet</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859136153' status='passed' stop='1698859136684'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859136684' status='passed' stop='1698859136684'>
+                    <name>Pet was found by id</name>
+                    <title>Pet was found by id</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'></description>
+        </test-case>
+        <test-case start='1698859136685' status='passed' stop='1698859139568'>
+            <name>Create a new pet then find it by</name>
+            <title>Create a new pet then find it by</title>
+            <labels>
+                <label name='story' value='Find pets'/>
+                <label name='testId' value='TEST-08'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859136685' status='passed' stop='1698859137259'>
+                    <name>Creating a new pet</name>
+                    <title>Creating a new pet</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859137259' status='passed' stop='1698859139568'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859139568' status='passed' stop='1698859139568'>
+                    <name>Pet not found; 404 received</name>
+                    <title>Pet not found; 404 received</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>404 when we searching by bad id</description>
+        </test-case>
+        <test-case start='1698859139568' status='passed' stop='1698859140862'>
+            <name>Each id is not unique</name>
+            <title>Each id is not unique</title>
+            <labels>
+                <label name='severity' value='critical'/>
+                <label name='story' value='Find pets'/>
+                <label name='testId' value='TEST-09'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859139568' status='passed' stop='1698859140862'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1698859140862' status='passed' stop='1698859140862'>
+                            <name>Url: petstore.swagger.io/v2/pet/findByStatus?status=available
+                            </name>
+                            <title>Url: petstore.swagger.io/v2/pet/findByStatus?status=available
+                            </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1698859140862' status='passed' stop='1698859140862'>
+                            <name>Status: 200
+                            </name>
+                            <title>Status: 200
+                            </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1698859140862' status='passed' stop='1698859140862'>
+                    <name>Check that ids are not unique</name>
+                    <title>Check that ids are not unique</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1698859140862' status='passed' stop='1698859140862'>
+                            <name>Number of unique ids: 33</name>
+                            <title>Number of unique ids: 33</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1698859140862' status='passed' stop='1698859140862'>
+                            <name>Number of all ids include non-unique: 359</name>
+                            <title>Number of all ids include non-unique: 359</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Check that every id is not unique</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

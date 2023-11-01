@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698859135727' stop='1698859137323'>
+    <name>POST /pet/{petId}</name>
+    <title>POST /pet/{petId}</title>
+    <test-cases>
+        <test-case start='1698859135727' status='passed' stop='1698859137323'>
+            <name>Update pet by id</name>
+            <title>Update pet by id</title>
+            <labels>
+                <label name='story' value='Find pets'/>
+                <label name='testId' value='TEST-12'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859135727' status='passed' stop='1698859137323'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859137323' status='passed' stop='1698859137323'>
+                    <name>Check status 200</name>
+                    <title>Check status 200</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Update pet feature</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

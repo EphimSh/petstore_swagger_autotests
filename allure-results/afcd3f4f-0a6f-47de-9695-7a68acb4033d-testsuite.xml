@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698859135384' stop='1698859135925'>
+    <name>POST /pet: Bad request</name>
+    <title>POST /pet: Bad request</title>
+    <test-cases>
+        <test-case start='1698859135384' status='passed' stop='1698859135925'>
+            <name>status should be 500</name>
+            <title>status should be 500</title>
+            <labels>
+                <label name='story' value='Add a pet'/>
+                <label name='testId' value='TEST-03'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859135384' status='passed' stop='1698859135925'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859135925' status='passed' stop='1698859135925'>
+                    <name>Status code is 500</name>
+                    <title>Status code is 500</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Sending body with String in 'id' instead of number</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

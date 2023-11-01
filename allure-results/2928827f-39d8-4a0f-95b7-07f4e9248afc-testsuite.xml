@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698859134345' stop='1698859135718'>
+    <name>PUT /pet</name>
+    <title>PUT /pet</title>
+    <test-cases>
+        <test-case start='1698859134346' status='passed' stop='1698859135095'>
+            <name>check added pet's name</name>
+            <title>check added pet's name</title>
+            <labels>
+                <label name='story' value='Update a pet'/>
+                <label name='testId' value='TEST-10'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859134346' status='passed' stop='1698859135094'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859135094' status='passed' stop='1698859135095'>
+                    <name>Check that name is changed</name>
+                    <title>Check that name is changed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Update pet feature</description>
+        </test-case>
+        <test-case start='1698859135096' status='passed' stop='1698859135718'>
+            <name>attempt to update with invalid data</name>
+            <title>attempt to update with invalid data</title>
+            <labels>
+                <label name='story' value='Update a pet (invalid data)'/>
+                <label name='testId' value='TEST-11'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698859135096' status='passed' stop='1698859135718'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1698859135718' status='passed' stop='1698859135718'>
+                    <name>Check error message</name>
+                    <title>Check error message</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Update pet feature</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

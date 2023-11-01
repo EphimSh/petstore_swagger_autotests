@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698858987974' stop='1698858987974'>
+    <name>POST /pet: Bad request</name>
+    <title>POST /pet: Bad request</title>
+    <test-cases>
+        <test-case start='1698858987974' status='failed' stop='1698858987974'>
+            <name>status should be 500</name>
+            <title>status should be 500</title>
+            <labels>
+                <label name='story' value='Add a pet'/>
+                <label name='testId' value='TEST-03'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1698858987974' status='undefined'>
+                    <name>Making request</name>
+                    <title>Making request</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: agent.post is not a function</message>
+                <stack-trace>TypeError: agent.post is not a function
+                    at Object.post (E:\documents\js\petstore_swagger\tests\add_pet.test.js:53:8)
+                    at Object.asyncJestTest (E:\documents\js\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:125:37)
+                    at E:\documents\js\node_modules\jest-jasmine2\build\queueRunner.js:41:12
+                    at new Promise (&lt;anonymous>)
+                    at mapper (E:\documents\js\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+                    at E:\documents\js\node_modules\jest-jasmine2\build\queueRunner.js:68:41
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+            <description type='text'>Sending body with String in 'id' instead of number</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

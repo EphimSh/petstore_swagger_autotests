@@ -1,4 +1,4 @@
-# ilink_petstore_swagger
+# petstore_swagger
 
 Проект по автотестам на petstore-swagger
 
